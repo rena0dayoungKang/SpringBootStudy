@@ -2,16 +2,20 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Service
 public class MemberService {
     //보통 서비스 클래스는 되게 비즈니스에 가까운 용어를 써야 한다. (레포지토리는 그냥 findAll, save, 이런식인데)
 
     private final MemberRepository memberRepository;
     //memberRepository 변수를 통해 MemoryMemberRepository의 메서드를 호출하거나 데이터를 저장할 수 있음.
+
+    //@Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

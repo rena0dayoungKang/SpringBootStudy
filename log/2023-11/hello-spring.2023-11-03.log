@@ -1,0 +1,30 @@
+2023-11-03 16:11:02.271 INFO  [restartedMain] [h.hellospring.HelloSpringApplication] - Starting HelloSpringApplication using Java 17.0.8 with PID 20788 (C:\Developer\springboot\SpringBootStudy\hello-spring\build\classes\java\main started by USER in C:\Developer\springboot\SpringBootStudy)
+2023-11-03 16:11:02.273 INFO  [restartedMain] [h.hellospring.HelloSpringApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-03 16:11:02.357 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-03 16:11:02.359 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-03 16:11:03.830 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2023-11-03 16:11:03.843 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-03 16:11:03.845 INFO  [restartedMain] [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-03 16:11:03.845 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-03 16:11:03.947 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-03 16:11:03.947 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1586 ms
+2023-11-03 16:11:04.037 WARN  [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController' defined in file [C:\Developer\springboot\SpringBootStudy\hello-spring\build\classes\java\main\hello\hellospring\controller\MemberController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'hello.hellospring.service.MemberService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-11-03 16:11:04.042 INFO  [restartedMain] [o.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-03 16:11:04.069 INFO  [restartedMain] [o.s.b.a.l.ConditionEvaluationReportLogger] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-03 16:11:04.124 ERROR [restartedMain] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in hello.hellospring.controller.MemberController required a bean of type 'hello.hellospring.service.MemberService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'hello.hellospring.service.MemberService' in your configuration.
+
